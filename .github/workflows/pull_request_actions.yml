@@ -71,7 +71,7 @@ jobs:
         id: plan
         run: |
          terraform plan 
-         terraform show tfplan
+        # terraform show tfplan
         continue-on-error: true
   apply:
     name: "Terraform Apply"
@@ -106,3 +106,6 @@ jobs:
         id: apply
         run: terraform apply -auto-approve #run-all apply -no-color --terragrunt-non-interactive
         continue-on-error: true
+      
+    # - name: Clean up
+      # run: terraform destroy -auto-approv
