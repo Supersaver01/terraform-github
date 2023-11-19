@@ -18,7 +18,7 @@ env:
 
 permissions:
   contents: write       # write permissions are needed in order to commit changes back to the branches
-  issues: write         # write permissions are needed in order to create comments
+  issues: write         # write permission are needed in order to create comments
   id-token: write
 
 concurrency: dev-reinvent    # This wills ensure only a single workflow of merge to master is run at a time
