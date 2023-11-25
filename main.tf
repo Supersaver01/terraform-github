@@ -35,7 +35,7 @@ resource "aws_instance" "aws_ubuntu" {
   instance_type          = "t2.micro"
   ami                    = data.aws_ami.ubuntu.id
   user_data              = file("userdata.tpl")
-  vpc_security_group_ids = ["${aws_security_group.ddemo_sg_pull-terraform-class.id}"]
+  vpc_security_group_ids = ["${aws_security_group.demo_sg_pull-terraform-class.id}"]
   key_name               = "EC2Instance"
 
     tags = {
