@@ -43,3 +43,9 @@ resource "aws_instance" "aws_ubuntu" {
   }
 
 }
+
+resource "aws_instance" "tes-resource" {
+  ami                     = "ami-0fc5d935ebf8bc3bc"
+  instance_type           = "t2.micro"
+
+}
