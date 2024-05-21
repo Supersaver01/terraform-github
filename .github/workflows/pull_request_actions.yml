@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       lock_id: # This input will be used to provide the lock ID for the force-unlock job
-        description: 'Terraform Lock ID to force unlock'
+        description: 'Terraform Lock ID to force unlock terraform state'
         required: true
   push:
     branches:
